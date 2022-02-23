@@ -1,0 +1,55 @@
+#!/bin/Groovy
+pipeline {
+    agent any
+    stages {
+        stage('What is your name') {
+           
+            steps {
+                echo 'My name is Abiodun fas'
+                
+            }
+        }
+        stage('Check date') {
+           
+            steps {
+                sh 'date'
+               
+            }
+        }
+        stage('Check calendar') {
+           
+            steps {
+                sh 'touch binto.sh'
+               
+            }
+        }
+         stage('Class') {
+           
+            steps {
+                echo 'i love myself >> bios.txt'
+               
+            }
+        }
+         stage('situation') {
+           
+            steps {
+                echo 'many many were wanle'
+               
+            }
+        }
+         stage('honourable cheche') {
+           
+            steps {
+                sh 'our teacher.sh'
+               
+            }
+        } 
+         stage('honourable cheche') {
+           
+            steps {
+                sh 'our teacher.sh'
+               
+            }
+        } 
+    }
+}
