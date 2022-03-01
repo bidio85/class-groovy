@@ -19,7 +19,7 @@ pipeline {
         stage('Check calendar') {
            
             steps {
-                sh 'touch binto.sh'
+                sh 'touch abi.sh'
                
             }
         }
@@ -37,17 +37,17 @@ pipeline {
                
             }
         }
-         stage('honourable cheche') {
+         stage('honourable cheche for Rep') {
            
             steps {
-                sh 'our teacher.sh'
+                echo 'Kosofe rep 2023'
                
             }
         } 
          stage('honourable cheche') {
            
             steps {
-                sh 'our teacher.sh'
+                sh 'touch teacher.sh'
                
             }
         } 
