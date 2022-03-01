@@ -9,7 +9,7 @@ pipeline {
                 
             }
         }
-        stage('start docker') {
+        stage('Start docker') {
            
             steps {
                 sh 'sudo systemctl start docker'
