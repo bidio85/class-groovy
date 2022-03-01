@@ -2,52 +2,52 @@
 pipeline {
     agent any
     stages {
-        stage('What is your name') {
+        stage('install docker') {
            
             steps {
-                echo 'My name is Abiodun fas'
+                sh 'yum install docker -y'
                 
             }
         }
-        stage('Check date') {
+        stage('start docker') {
            
             steps {
-                sh 'date'
+                sh 'systemctl start docker'
                
             }
         }
-        stage('Check calendar') {
+        stage('Check docker status') {
            
             steps {
-                sh 'touch abi.sh'
+                sh 'systemctl status docker'
                
             }
         }
-         stage('Class') {
+         stage('Check docker images') {
            
             steps {
-                echo 'i love myself >> bios.txt'
+                sh 'docker images'
                
             }
         }
-         stage('Situation') {
+         stage('Check docker images running') {
            
             steps {
-                echo 'many many were wanle'
+                sh 'docker ps -a'
                
             }
         }
-         stage('honourable cheche for Rep') {
+         stage('Check docker log') {
            
             steps {
-                echo 'Kosofe rep 2023'
+                sh  'docker log'
                
             }
         } 
-         stage('honourable cheche') {
+         stage('Docker processes') {
            
             steps {
-                sh 'touch teacher.sh'
+                sh 'docker ps'
                
             }
         } 
