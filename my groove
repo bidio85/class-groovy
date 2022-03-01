@@ -2,24 +2,24 @@
 pipeline {
     agent any
     stages {
-        stage('install docker') {
+        stage('Docker ') {
            
             steps {
-                sh 'sudo yum install docker -y'
+                echo 'Is docker running'
                 
             }
         }
         stage('start docker') {
            
             steps {
-                sh 'sudo systemctl start docker'
+                sh 'systemctl start docker'
                
             }
         }
         stage('Check docker status') {
            
             steps {
-                sh 'sudo systemctl status docker'
+                sh 'systemctl status docker'
                
             }
         }
