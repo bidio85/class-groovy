@@ -26,28 +26,28 @@ pipeline {
          stage('Check docker images') {
            
             steps {
-                sh 'docker images'
+                sh 'sudo docker images'
                
             }
         }
          stage('Check docker images running') {
            
             steps {
-                sh 'docker ps -a'
+                sh 'sudo docker ps -a'
                
             }
         }
          stage('Check docker log') {
            
             steps {
-                sh  'docker log'
+                sh  'sudo docker log'
                
             }
         } 
          stage('Docker processes') {
            
             steps {
-                sh 'docker ps'
+                sh 'sudo docker ps'
                
             }
         } 
