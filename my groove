@@ -5,21 +5,21 @@ pipeline {
         stage('install docker') {
            
             steps {
-                sh 'yum install docker -y'
+                sh 'sudo yum install docker -y'
                 
             }
         }
         stage('start docker') {
            
             steps {
-                sh 'systemctl start docker'
+                sh 'sudo systemctl start docker'
                
             }
         }
         stage('Check docker status') {
            
             steps {
-                sh 'systemctl status docker'
+                sh 'sudo systemctl status docker'
                
             }
         }
